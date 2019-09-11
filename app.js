@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.get('/:param', (req, res) => {
+app.get('/', (req, res) => {
     res.send(req.header('User-Agent'));
 })
 
